@@ -4,8 +4,18 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 
-// Import Bootstrap and BootstrapVue CSS files (order is important)
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+// Vuetify
+import '@mdi/font/css/materialdesignicons.css'
+import 'vuetify/styles'
+import { createVuetify } from 'vuetify'
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
 
-createApp(App).use(store).use(router).mount('#app')
+createApp(App)
+    .use(store)
+    .use(createVuetify({
+        components,
+        directives
+    }))
+    .use(router)
+    .mount('#app')
