@@ -1,0 +1,149 @@
+.pcoded-navbar {
+  display: block;
+  z-index: 1000;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  min-width: 264px;
+  height: 100%;
+  background: #1b1c1d;
+  color: #b5bdca;
+  transition: 5s all ease-in-out;
+  overflow-y: scroll;
+}
+
+
+.pcoded-navbar-ishidden {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.pcoded-navbar ul {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.pcoded-navbar .scroll-div.navbar-content {
+  height: calc(100vh - 60px)
+}
+
+
+
+.pcoded-navbar .navbar-content {
+  box-shadow: 7px 0 15px 0 rgba(69, 90, 100, 0.09);
+}
+
+
+
+.pcoded-navbar .pcoded-inner-navbar {
+  flex-direction: column;
+}
+
+.pcoded-navbar .pcoded-inner-navbar li {
+  position: relative;
+}
+
+.pcoded-navbar .pcoded-inner-navbar li>a {
+  text-align: left;
+  padding: 7px 10px 7px 20px;
+  margin: 5px 0 0;
+  display: block;
+  border-radius: 0;
+  position: relative;
+}
+
+.pcoded-navbar .pcoded-inner-navbar li>a .pcoded-mtext {
+  position: relative;
+}
+
+.pcoded-navbar .pcoded-inner-navbar li>a>.pcoded-micon {
+  font-size: 14px;
+  padding: 4px 7px;
+  margin-right: 2px;
+  border-radius: 4px;
+  width: 30px;
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  text-align: center;
+}
+
+.pcoded-navbar .pcoded-inner-navbar li>a>.pcoded-micon+.pcoded-mtext {
+  position: relative;
+  top: 0;
+}
+
+
+
+.pcoded-navbar .pcoded-inner-navbar li.disabled>a {
+  cursor: default;
+  opacity: 0.5;
+}
+
+
+
+.pcoded-navbar a {
+  color: #b5bdca;
+}
+
+.pcoded-navbar .navbar-content, .pcoded-navbar .navbar-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.pcoded-navbar .pcoded-inner-navbar>li a.router-link-active.router-link-exact-active:after {
+  content: "";
+  background-color: #8A6508;
+  z-index: 1027;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+}
+
+.pcoded-navbar .pcoded-inner-navbar>li a.router-link-active.router-link-exact-active  {
+  background: #111212;
+  color: #fff;
+}
+
+/* ===================================================================================
+ ==========================    Diffrent Layout Styles Start     ====================
+ ===================================================================================
+ ====== [ light menu style start ] ======== */
+
+.pcoded-navbar.menu-light {
+  background-color: #fff;
+  color: #1b1c1d;
+}
+
+
+
+.pcoded-navbar.menu-light a {
+  color: #1b1c1d;
+}
+
+.pcoded-navbar.menu-light .pcoded-inner-navbar>li a.router-link-active.router-link-exact-active {
+  background: #F5F8FF;
+  color: #8A6508;
+}
+
+/* ====== [ menu fixed start ] ======== */
+
+.pcoded-navbar.menupos-fixed {
+  position: fixed;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.pcoded-navbar.menupos-fixed .scroll-div.navbar-content {
+  height: calc(100% - 60px);
+  min-height: calc(100% - 60px);
+  overflow: scroll;
+}
+
+/* ====== [ menu fixed end ] ======== */
+
