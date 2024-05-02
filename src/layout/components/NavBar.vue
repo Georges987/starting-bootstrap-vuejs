@@ -35,7 +35,7 @@ const toggle = () => {
         <ul class="navbar-nav ms-5 me-auto mb-2 mb-lg-0"></ul>
         <div class="me-5">
           <router-link to="/profil">
-            <v-avatar
+            <Avatar
               label="BI"
               class="p-mr-2"
               style="background-color: #fff; color: #41348c"

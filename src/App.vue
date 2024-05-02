@@ -1,19 +1,20 @@
 <template>
-  <v-app>
-    <LayoutView />
-  </v-app>
+  <router-view />
 </template>
 
 <script setup>
 // import { ref } from "vue";
-import LayoutView from "./layout/LayoutView.vue";
 
 // const drawer = ref(false);
 </script>
 
 <style lang="scss">
+* {
+  margin: 0;
+  padding: o;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Open Sans, sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

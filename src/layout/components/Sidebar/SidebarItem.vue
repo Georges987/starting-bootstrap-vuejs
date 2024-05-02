@@ -3,7 +3,7 @@ import { useStore } from "vuex";
 import { useRouter } from "vue-router";
 import { Icon } from "@iconify/vue";
 const store = useStore();
-const user = store.getters["user/profile"];
+// const user = store.getters["user/profile"];
 
 const router = useRouter();
 const handleLogout = () => {
@@ -44,7 +44,7 @@ const handleLogout = () => {
       <span class="pcoded-mtext">Trajets</span>
     </router-link>
   </li>
-  <li v-if="user.role === 'super-admin'" class="nav-item">
+  <li class="nav-item">
     <router-link to="/gestionnaires" class="nav-link">
       <span class="pcoded-micon">
         <Icon icon="clarity:administrator-solid" />
@@ -52,7 +52,7 @@ const handleLogout = () => {
       <span class="pcoded-mtext">Gestionnaires</span>
     </router-link>
   </li>
-  <li v-if="user.role === 'super-admin'" class="nav-item">
+  <li class="nav-item">
     <router-link to="/facturation" class="nav-link">
       <span class="pcoded-micon">
         <Icon icon="ic:twotone-price-check" />
@@ -60,7 +60,7 @@ const handleLogout = () => {
       <span class="pcoded-mtext">Facturation</span>
     </router-link>
   </li>
-  <li v-if="user.role === 'super-admin'" class="nav-item">
+  <li class="nav-item">
     <router-link to="/promotions" class="nav-link">
       <span class="pcoded-micon">
         <Icon icon="ps:promo" />

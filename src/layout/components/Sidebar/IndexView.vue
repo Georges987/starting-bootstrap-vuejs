@@ -1,6 +1,6 @@
 <template>
   <div id="externSidebar" class="collapse show">
-    <nav class="pcoded-navbar menu-light brand-blue">
+    <nav class="pcoded-navbar menu-light brand-blue sidebar">
       <div class="navbar-wrapper">
         <div class="navbar-content scroll-div">
           <ul class="nav pcoded-inner-navbar pt-4">
