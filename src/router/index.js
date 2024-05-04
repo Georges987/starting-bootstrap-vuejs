@@ -66,7 +66,7 @@ export const constantRoutes = [
       },
       {
         path: "/passagers",
-        component: () => import("@/views/passagers.vue"),
+        component: () => import("@/views/PassagersView.vue"),
         name: "passagers",
         meta: {
           title: "Passagers",
