@@ -1,15 +1,15 @@
 <script setup>
-import { useStore } from "vuex";
-import { useRouter } from "vue-router";
+// import { useStore } from "vuex";
+// import { useRouter } from "vue-router";
 import { Icon } from "@iconify/vue";
-const store = useStore();
+// const store = useStore();
 // const user = store.getters["user/profile"];
 
-const router = useRouter();
-const handleLogout = () => {
-  store.dispatch("user/resetToken");
-  router.push("connexion");
-};
+// const router = useRouter();
+// const handleLogout = () => {
+//   store.dispatch("user/resetToken");
+//   router.push("connexion");
+// };
 </script>
 <template>
   <li class="nav-item">

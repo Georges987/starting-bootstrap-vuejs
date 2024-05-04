@@ -1,8 +1,13 @@
 <template>
+  <NavBar />
+  <IndexView />
   <router-view />
 </template>
 
 <script setup>
+import NavBar from './layout/components/NavBar.vue';
+import IndexView from './layout/components/Sidebar/IndexView.vue';
+
 // import { ref } from "vue";
 
 // const drawer = ref(false);
